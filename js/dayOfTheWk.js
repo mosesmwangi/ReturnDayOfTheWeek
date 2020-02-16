@@ -70,38 +70,38 @@
 
 
 
-// var maleNames = ["Kwasi", "Kwado", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
-// var femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
-// var daysOfTheWk = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+var maleNames = ["Kwasi", "Kwado", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+var femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+var daysOfTheWk = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
 
-// function showDay() {
+function showDay() {
 
-//     var theYear = parseInt(document.getElementById("yearOfBirth").value);
-//     var theMonth = parseInt(document.getElementById("monthOfBirth").value);
-//     var theDay = parseInt(document.getElementById("dayOfBirth").value);
-//     var maleName = document.getElementById("male");
-//     var femaleName = document.getElementById("female");
+    var theYear = parseInt(document.getElementById("yearOfBirth").value);
+    var theMonth = parseInt(document.getElementById("monthOfBirth").value);
+    var theDay = parseInt(document.getElementById("dayOfBirth").value);
+    var maleName = document.getElementById("male");
+    var femaleName = document.getElementById("female");
 
-//     var theDayIs = new Date(theYear + "/" + theMonth + "/" + theDay);
+    var theDayIs = new Date(theYear + "/" + theMonth + "/" + theDay);
 
-//     var dateGotten = theDayIs.getDay();
+    var dateGotten = theDayIs.getDay();
 
-//     if (theYear<1900 || theYear>2020) {
-//         alert("Date Invalid");
-//     }
-//     else if ( theMonth<1 || theMonth>12) {
-//         alert("Month Invalid");
-//     }
-//     else if (theDay<1 || theDay>31) {
-//         alert("Day Invalid");
-//     }
+    if (theYear<1900 || theYear>2020) {
+        alert("Date Invalid");
+    }
+    else if ( theMonth<1 || theMonth>12) {
+        alert("Month Invalid");
+    }
+    else if (theDay<1 || theDay>31) {
+        alert("Day Invalid");
+    }
 
 
-//     if (maleName.checked==true) {
-//         alert(maleNames[dateGotten] + " " + daysOfTheWk[dateGotten]);
-//                                                                                                                                                                }
-//     else if (femaleName.checked==true) {
-//         alert(femaleNames[dateGotten] + " " + daysOfTheWk[dateGotten]);
-//     }
-// }
+    if (maleName.checked==true) {
+        alert(maleNames[dateGotten] + " " + daysOfTheWk[dateGotten]);
+    }
+    else if (femaleName.checked==true) {
+        alert(femaleNames[dateGotten] + " " + daysOfTheWk[dateGotten]);
+    }
+}
