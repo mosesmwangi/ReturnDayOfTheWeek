@@ -105,10 +105,10 @@ function showDay() {
         alert("Month Invalid, enter another time");
     }
     else if (theDay<1 || theDay>31) {
-        alert(theCentury);
-        alert(thYrOfBrth);
-        alert(theDateGotten);
+        alert("The Day Is Invalid, Enter Again");
         // continue;
+    } else {
+        alert("Fill in your Details");
     }
 
 

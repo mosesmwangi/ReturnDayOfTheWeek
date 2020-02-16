@@ -7,7 +7,6 @@
 body {
     background-image: url(images/img.jpeg);
     background-size: cover;
-    background-repeat: no-repeat;
     color: #000;
     text-align: center;
 }
@@ -19,4 +18,9 @@ body {
 
 .form-group {
     text-align: center;
+}
+
+.h2 {
+    position: relative;
+    top: 15px;
 }

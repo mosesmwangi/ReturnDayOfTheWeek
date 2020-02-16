@@ -11,60 +11,67 @@
 </head>
 <body>
 
-    <!-- <img src="images/img.jpeg" alt=""> -->
+    <!-- <img src="images/img.jpeg" alt="GHANA"> -->
     <!-- <div class="view" style="background-image: url(images/img.jpeg); background-repeat: no-repeat; background-size: cover;background-position: center center;"></div> -->
 
     <div class="container">  
 
-        <div class="jumbotron">
+        <div class="h2">
             <h2>A Program To Help Show When You Were Born</h2>
         </div>
 
         <hr>
 
-        <div class="row">
+        <div class="jumbotron">
+         <div class="row">
             <div class="col-md-2">
              <h3>
-                Are you from Ghana? 
+                <strong>Are you from Ghana?</strong> 
              </h3>
             </div>
             <div class="col-md-5">
              <h3>
-                Well, in case you were from there, this program helps 
-                You To Know The Day of The Week You Were Born.  
+                <strong>Well, in case you were from there, this program helps 
+                You To Know The Day of The Week You Were Born.</strong> 
              </h3>
             </div>
             <div class="col-md-5">
              <h3>
-                It goes ahead to show You the Name You'd be Given Had You Been 
-                Born on the Very Day. 
+                <strong> goes ahead to show You the Name You'd be Given Had You Been 
+                Born on the Very Day.</strong> 
              </h3>
             </div>         
+         </div>
         </div>
 
-        <hr>
+         <hr>
 
         
+        <pre>Enter Your Year Of Birth, Month Of Birth and Day Of Birth</pre>
+        <div class="form-group">
+          <input type="text" placeholder="year" name="year" id="yearOfBirth"> <br> 
+        </div>
+
+        <div class="form-group">
+          <input type="text" placeholder="month" name="month" id="monthOfBirth"> <br>
+        </div>
+
+        <div class="form-group">        
+          <input type="text"  placeholder="day" name="day" id="dayOfBirth"> <br>
+        </div>
+
+        <pre>Chooose Your Gender: </pre>
+        <div > 
+            <input type="radio" name="gender" id="female" placeholder="Female">
+          <label for="female">Female</label><br> 
         
-         <div class="form-group">
-           <input type="text" placeholder="year" name="year" id="yearOfBirth"> <br> 
-         </div>
 
-         <div class="form-group">
-           <input type="text" placeholder="month" name="month" id="monthOfBirth"> <br>
-         </div>
+          <input type="radio" name="gender" id="male" value="Male">
+          <label for="male">Male</label><br>
 
-         <div class="form-group">        
-           <input type="text"  placeholder="day" name="day" id="dayOfBirth"> <br>
-         </div>
+        </div>
 
-           <input type="radio" name="gender" id="female" placeholder="Female">
-           <label for="female">Female</label><br> 
-
-           <input type="radio" name="gender" id="male" value="Male">
-           <label for="male">Male</label><br>
-
-           <input type="submit" name="submit" onclick="showDay()">
+          <input type="submit" name="submit" onclick="showDay()">
 
          
 
