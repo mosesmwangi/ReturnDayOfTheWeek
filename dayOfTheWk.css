@@ -1,5 +1,10 @@
-img {
+/* img {
     z-index: -1;
     width: 100%;
     height: auto;
+} */
+
+.jumbotron {
+    position: relative;
+    top: 12px;
 }
