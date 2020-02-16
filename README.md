@@ -5,5 +5,5 @@ Then furnish the site
 ### A Ghana-oriented project. Gives back day of the week born, on entering information, plus name one would be given if born on that day.
 ## GitHub page. Link on GitHub.
 ## Enter information. Submit
-## Link to GiTHub Project - https://github.com/mosesmwangi/ReturnDayOfTheWeek.git
+## Link to GiTHub Project - https://mosesmwangi.github.io/ReturnDayOfTheWeek/
 ## App May be Used for Free Source But Problems Arising from its use bear no liability to the creator.
