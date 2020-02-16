@@ -83,25 +83,39 @@ function showDay() {
     var maleName = document.getElementById("male");
     var femaleName = document.getElementById("female");
 
-    var theDayIs = new Date(theYear + "/" + theMonth + "/" + theDay);
+    // var theDayIs = new Date(theYear + "/" + theMonth + "/" + theDay);
 
-    var dateGotten = theDayIs.getDay();
+    var theYr = theYear.toString();
+    var theCent = theYr.slice(0,2);
+    var theCentury = parseInt(theCent);
+
+    var theYearBirth = theYr.slice(2,4);
+    var thYrOfBrth = parseInt(theYearBirth);  
+    
+    var dateGotten = ( ( (theCentury/4) -2*theCentury-1) + ((5*thYrOfBrth/4) ) + ((26*(theMonth+1)/10)) + theDay ) % 7;
+    var theDateGotten = Math.ceil(dateGotten);
+    
+
+    // var dateGotten = theDayIs.getDay();
 
     if (theYear<1900 || theYear>2020) {
         alert("Date Invalid, this is either a long time ago or years way ahead");
     }
     else if ( theMonth<1 || theMonth>12) {
-        alert("Month Invalid");
+        alert("Month Invalid, enter another time");
     }
     else if (theDay<1 || theDay>31) {
-        alert("Day Invalid");
+        alert(theCentury);
+        alert(thYrOfBrth);
+        alert(theDateGotten);
+        // continue;
     }
 
 
-    if (maleName.checked==true) {
-        alert("You'd have been born on " + daysOfTheWk[dateGotten] + " and given the name" + maleNames[dateGotten]);
+    if (maleName.checked==true ) {
+        alert("You'd have been born on " + daysOfTheWk[theDateGotten] + " and given the name " + maleNames[theDateGotten]);
     }
     else if (femaleName.checked==true) {
-        alert("You'd have been born on " + daysOfTheWk[dateGotten] + " and given the name" + femaleNames[dateGotten]);
+        alert("You'd have been born on " + daysOfTheWk[theDateGotten] + " and given the name " + femaleNames[theDateGotten]);
     }
 }
