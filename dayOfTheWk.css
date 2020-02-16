@@ -8,6 +8,8 @@ body {
     background-image: url(images/img.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
+    color: #000;
+    text-align: center;
 }
 
 .jumbotron {
@@ -16,9 +18,5 @@ body {
 }
 
 .form-group {
-    text-align: center;
-}
-
-.form-control {
     text-align: center;
 }
