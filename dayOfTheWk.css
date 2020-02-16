@@ -4,6 +4,12 @@
     height: auto;
 } */
 
+body {
+    background-image: url(images/img.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .jumbotron {
     position: relative;
     top: 12px;
