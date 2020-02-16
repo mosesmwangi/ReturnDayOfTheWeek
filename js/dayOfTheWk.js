@@ -88,7 +88,7 @@ function showDay() {
     var dateGotten = theDayIs.getDay();
 
     if (theYear<1900 || theYear>2020) {
-        alert("Date Invalid");
+        alert("Date Invalid, this is either a long time ago or years way ahead");
     }
     else if ( theMonth<1 || theMonth>12) {
         alert("Month Invalid");
@@ -99,9 +99,9 @@ function showDay() {
 
 
     if (maleName.checked==true) {
-        alert(maleNames[dateGotten] + " " + daysOfTheWk[dateGotten]);
+        alert("You'd have been born on " + daysOfTheWk[dateGotten] + " and given the name" + maleNames[dateGotten]);
     }
     else if (femaleName.checked==true) {
-        alert(femaleNames[dateGotten] + " " + daysOfTheWk[dateGotten]);
+        alert("You'd have been born on " + daysOfTheWk[dateGotten] + " and given the name" + femaleNames[dateGotten]);
     }
 }
