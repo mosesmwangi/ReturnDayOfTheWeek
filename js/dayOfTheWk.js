@@ -107,9 +107,9 @@ function showDay() {
     else if (theDay<1 || theDay>31) {
         alert("The Day Is Invalid, Enter Again");
         // continue;
-    } else {
-        alert("Fill in your Details");
-    }
+    } // else {
+    //     alert("Fill in your Details");
+    // }
 
 
     if (maleName.checked==true ) {
